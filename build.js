@@ -79,7 +79,7 @@ function copyStaticFiles() {
 }
 
 function clearDirectory() {
-  rmSync("./out", { recursive: true });
+  rmSync("./out", { recursive: true, force: true });
   mkdirSync("./out");
 }
 
