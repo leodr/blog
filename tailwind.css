@@ -3,5 +3,158 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gray-50;
+  @apply bg-white;
+}
+
+@font-face {
+  font-family: "Caslon";
+  src: url(ACaslonPro-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Caslon";
+  src: url(ACaslonPro-Italic.otf) format("opentype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Caslon";
+  src: url(ACaslonPro-Bold.otf) format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Caslon";
+  src: url(ACaslonPro-BoldItalic.otf) format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Caslon";
+  src: url(ACaslonPro-Semibold.otf) format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Caslon";
+  src: url(ACaslonPro-SemiboldItalic.otf) format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto minmax(0, 45rem) auto auto;
+}
+
+.contentarea {
+  grid-column: 2;
+}
+
+.typography {
+  font-size: 1.3125rem;
+  line-height: 1.5;
+}
+
+.typography > * {
+  margin-top: 1.5rem;
+}
+
+.typography > *:first-child {
+  margin-top: 0 !important;
+}
+
+/*
+ * Headings
+ */
+
+.typography h1 {
+  font-size: 2.25rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.typography h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: 2.5rem;
+}
+
+/*
+ * Paragraphs
+ */
+
+.typography > p:first-of-type::first-letter {
+  font-size: 3.75rem;
+  line-height: 1;
+  float: left;
+  padding: 0.2em 0.1em 0 0;
+}
+
+.typography a {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+}
+
+/*
+ * Lists
+ */
+
+.typography ol {
+  list-style-type: decimal;
+  padding-left: 2rem;
+  margin-top: 1.5rem;
+}
+
+.typography ol li {
+  padding-left: 0.5rem;
+}
+
+.typography ul {
+  padding-left: 1rem;
+  margin-top: 1.5rem;
+}
+
+.typography ul li {
+  position: relative;
+  padding-left: 0.75rem;
+}
+
+.typography ul li::before {
+  position: absolute;
+  right: 100%;
+  content: "-";
+}
+
+/*
+ * Quotes
+ */
+
+.typography blockquote {
+  font-style: italic;
+  border-left: 2px solid #ddd;
+  padding-left: 1rem;
+  border-radius: 2px;
+  font-size: 1.15em;
+  line-height: 1.35;
+}
+
+/*
+ * Code
+ */
+
+.typography pre {
+  margin-top: 1.5rem;
+}
+
+.typography pre code {
+  font-size: 0.9rem;
+  line-height: 1.5;
+
+  padding: 0.75rem 1rem !important;
+  background-color: #f6f8fa;
+  border-radius: 4px;
+  overflow-x: auto;
 }
