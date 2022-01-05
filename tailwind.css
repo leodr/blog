@@ -71,8 +71,10 @@ main {
 
 .typography h1 {
   font-size: 2.25rem;
-  line-height: 1.1;
+  line-height: 1.35;
   font-weight: bold;
+
+  font-family: "Marcellus", serif;
 }
 
 .typography h2 {
