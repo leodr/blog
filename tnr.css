@@ -49,6 +49,10 @@ h6 {
     serif;
 }
 
+html {
+  background-color: #dcdcdc;
+}
+
 /* The background noise bit is below */
 body {
   background-color: #fafafa;
