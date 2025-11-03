@@ -2,20 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leo's Blog</title>
-    <link rel="stylesheet" href="tnr.css" />
+    <link
+      rel="preload"
+      href="fonts/CrimsonText-Regular.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/CrimsonText-SemiBold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <article>
-      <h1>Posts</h1>
-      <section>
-        <ol>
-          <li><a href="taste.html">Taste</a></li>
-          <li><a href="pause.html">Why Pause</a></li>
-        </ol>
-      </section>
-    </article>
+    <!-- Home Page -->
+    <div id="home-page">
+      <header class="header">
+        <div class="header-content">
+          <h1 class="title">Leo's Blog</h1>
+          <p class="header-subtitle">Thoughts, reflections, and ideas</p>
+        </div>
+      </header>
+
+      <main>
+        <a href="pause.html" class="article-card">
+          <article>
+            <div class="article-meta">
+              <time datetime="2023-05-12">May 12, 2023</time>
+              <span aria-hidden="true">·</span>
+              <span>1 min read</span>
+            </div>
+            <h2>Why Pause</h2>
+            <p class="article-excerpt">
+              After finishing or achieving something great, one may be tempted
+              to stay in the flow and start with the next thing. However I think
+              taking a break is important.
+            </p>
+          </article>
+        </a>
+
+        <a href="taste.html" class="article-card">
+          <article>
+            <div class="article-meta">
+              <time datetime="2023-03-14">March 14, 2023</time>
+              <span aria-hidden="true">·</span>
+              <span>1 min read</span>
+            </div>
+            <h2>Taste over Skill</h2>
+            <p class="article-excerpt">
+              As tools aiding the creative process become better, the advantage
+              one human has in crafting a specific output diminishes.
+            </p>
+          </article>
+        </a>
+      </main>
+    </div>
   </body>
 </html>
